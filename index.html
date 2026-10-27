@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="minimal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muola Veronica | Computer Science, Web and Security</title>
+<meta name="description" content="Portfolio of Muola Veronica: MSc Computer Science student at the University of Embu with experience in web development, IT support and cybersecurity.">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+:root[data-theme="minimal"]{--bg:#fbfbf9;--surface:#fff;--text:#1c1d21;--muted:#5d6068;--accent:#2f4bd8;--ink:#fff;--line:#e3e3df;--r:6px;--fh:Georgia,"Times New Roman",serif;--fb:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root[data-theme="dark"]{--bg:#14121f;--surface:#1e1b2e;--text:#f1eefc;--muted:#a8a2c2;--accent:#b79cff;--ink:#14121f;--line:#34304b;--r:16px;--fh:"Trebuchet MS",system-ui,sans-serif;--fb:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color-scheme:dark}
+:root[data-theme="tech"]{--bg:#05100b;--surface:#0a1a12;--text:#cfeedd;--muted:#7fa592;--accent:#3dff9a;--ink:#04120a;--line:#17402b;--r:2px;--fh:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--fb:ui-monospace,"SF Mono",Menlo,Consolas,monospace;color-scheme:dark}
+:root[data-theme="warm"]{--bg:#fff4e6;--surface:#fffaf2;--text:#3a2418;--muted:#7b5a47;--accent:#c2410c;--ink:#fff;--line:#f0d9bd;--r:22px;--fh:"Palatino Linotype",Palatino,Georgia,serif;--fb:"Trebuchet MS",system-ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.65 var(--fb);transition:background .25s,color .25s}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.looks{display:flex;gap:6px;align-items:center;font-size:.9rem;color:var(--muted)}
+.looks button{font:inherit;font-size:.85rem;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer}
+.looks button[aria-pressed="true"]{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.hero{padding:72px 0 56px}
+h1{font:700 clamp(2.4rem,8vw,4.4rem)/1.05 var(--fh);margin:0 0 18px;letter-spacing:-.02em}
+.lead{font-size:1.2rem;max-width:36em;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 22px;border-radius:var(--r);text-decoration:none;font-weight:600;border:1px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--ink)}
+.btn.alt{color:var(--accent)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:700 1.7rem/1.2 var(--fh);margin:0 0 22px}
+h3{font:700 1.1rem/1.3 var(--fh);margin:0}
+p{margin:0 0 12px;max-width:42em}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin-bottom:16px}
+.item .when{color:var(--muted);font-size:.9rem;margin:2px 0 10px}
+.item ul{margin:0;padding-left:1.1em}
+.item li{margin-bottom:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 13px;font-size:.92rem}
+.skill{margin-bottom:18px}
+.skill strong{display:block}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}body{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="looks" role="group" aria-label="Choose a look">
+      Look:
+      <button type="button" data-set="minimal">Minimal</button>
+      <button type="button" data-set="dark">Dark</button>
+      <button type="button" data-set="tech">Cyber</button>
+      <button type="button" data-set="warm">Warm</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <h1>Muola Veronica</h1>
+    <p class="lead">Computer Science student at the University of Embu who builds websites, secures web applications and keeps campus IT running.</p>
+    <div class="btns">
+      <a class="btn main" href="#contact">Get in touch</a>
+      <a class="btn alt" href="#experience">See my experience</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I’m a detail-oriented MSc Computer Science student with a first-class Bachelor of Science Computer Science
+       from the University of Embu. My work spans web development, systems, data analysis, networking and cybersecurity.</p>
+    <p>I teach as well as build: I assist on the university’s AI Upskilling Program, and I have lead cybersecurity 
+      for the Google Developer Groups chapter on campus. I’m always learning, and right now that means cloud, 
+      through the AWS Restart program.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>ICT Intern, University of Embu</h3>
+      <div class="when">January to May 2026</div>
+      <ul>
+        <li>Managed and updated web content on Joomla and WordPress so university information stayed accurate and timely.</li>
+        <li>Developed and maintained custom PHP features to improve site performance and user experience.</li>
+        <li>Gave daily IT support to faculty and administrative staff across hardware, software and network issues.</li>
+        <li>Kept institutional data safe by running routine backups and checking data integrity.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Teaching Assistant, AI Upskilling Program, University of Embu</h3>
+      <div class="when">Artificial Intelligence and Large Language Models</div>
+      <ul>
+        <li>Helped deliver coursework on AI and LLMs to a cohort of students.</li>
+        <li>Ran interactive sessions that connected core concepts to practical uses.</li>
+        <li>Troubleshot student issues and reinforced difficult topics.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Cybersecurity Attaché, SoFSREA</h3>
+      <div class="when">May to August 2024, Society of Forensic Science Researchers and Expert Association</div>
+      <ul>
+        <li>Ran vulnerability assessments and found common web application security risks.</li>
+        <li>Applied security testing techniques to detect, analyse and reduce threats.</li>
+        <li>Analysed security incidents and wrote up findings with actionable recommendations.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>IT Intern, R.M. Njiraini and Co. Advocates</h3>
+      <div class="when">July 2024</div>
+      <ul>
+        <li>Built and rolled out a management information system for fleet vehicles.</li>
+        <li>Validated data and tested reports during integration.</li>
+        <li>Supported the integration and troubleshooting, and kept records accurate and current.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>Fleet vehicle management system</h3>
+        <p>A management information system for a law firm’s vehicles, with data validation and report testing built into the rollout.</p>
+      </div>
+      <div class="item">
+        <h3>University of Embu web content</h3>
+        <p>Ongoing Joomla and WordPress maintenance with custom PHP functionality for the university’s websites.</p>
+      </div>
+      <div class="item">
+        <h3>Web application security assessments</h3>
+        <p>Vulnerability testing and incident analysis, ending in clear written recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill"><strong>Programming languages</strong>
+      <ul class="chips"><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>SQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></div>
+    <div class="skill"><strong>Web and content management</strong>
+      <ul class="chips"><li>Joomla</li><li>WordPress</li><li>PHP</li><li>Website maintenance</li></ul></div>
+    <div class="skill"><strong>IT support and infrastructure</strong>
+      <ul class="chips"><li>Hardware and software troubleshooting</li><li>User support</li><li>Backups</li><li>Networking fundamentals</li></ul></div>
+    <div class="skill"><strong>Data</strong>
+      <ul class="chips"><li>Excel</li><li>SQL</li><li>Data analytics</li></ul></div>
+  </section>
+
+  <section id="education">
+    <h2>Education and certifications</h2>
+    <div class="item">
+      <h3>MSc Computer Science, University of Embu</h3>
+      <div class="when">May 2026 to present</div>
+    </div>
+    <div class="item">
+      <h3>AWS Restart Program, toward AWS Cloud Practitioner</h3>
+      <div class="when">September 2026 to present</div>
+    </div>
+    <div class="item">
+      <h3>BSc Computer Science, First Class Honors, University of Embu</h3>
+      <div class="when">2021 to 2025</div>
+    </div>
+    <div class="item">
+      <h3>Certificate in Computer Applications, ICT4D</h3>
+      <div class="when">2021</div>
+    </div>
+    <h3 style="margin:26px 0 6px">Certifications</h3>
+    <ul class="chips">
+      <li>Data Analytics, ICT Authority</li>
+      <li>Digital Literacy, Deloitte</li>
+      <li>Cisco Cyber Security</li>
+      <li>Cisco Networking</li>
+      <li>Emerging Leader, ISACA SheLeadsTech ElevateHer</li>
+    </ul>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership and volunteering</h2>
+    <div class="grid">
+      <div class="item"><h3>Cyber Security Lead</h3><p>Google Developer Groups on Campus, University of Embu</p></div>
+      <div class="item"><h3>Chapter representative</h3><p>She Code Africa, Chuka Chapter, University of Embu</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I’m open to internships, graduate roles and collaborations in web development, IT and cybersecurity.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:muola.veronica@gmail.com">Email me</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/muola-veronica-a3bab326a" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap">© <span id="yr">2026</span> Muola Veronica</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btns=document.querySelectorAll('[data-set]'), key='portfolio-look';
+  function apply(t){root.setAttribute('data-theme',t);btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===t?'true':'false')})}
+  var saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+  if(!saved||!/^(minimal|dark|tech|warm)$/.test(saved)){saved=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'minimal'}
+  apply(saved);
+  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.set);try{localStorage.setItem(key,b.dataset.set)}catch(e){}})});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
